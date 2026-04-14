@@ -1,11 +1,11 @@
 
-const menu =document.getElementById('menubtn');
+const menu =document.getElementById('menuBtn');
 const nav =document.getElementById("nav");
 
 menu.addEventListener('click', () => {
-    menu.classList.toggle('active');
+    nav.classList.toggle('active');
     if
-  (menu.classList.contains("active"))
+  (nav.classList.contains("active"))
   menu.textContent = "X"
   else
   menu.textContent =  "☰"
