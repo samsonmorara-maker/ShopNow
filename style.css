@@ -62,11 +62,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px ;
     text-align: center;
-    height: 100px;
-
-
-    
+    height: 380px;  
 }
+h4{
+    font-size: xx-large;
+}
+
 .shop {
     padding: 5px;
     font-size: x-large;
@@ -75,14 +76,14 @@ body {
     border-radius: 8px;
     text-decoration: none;
 }
+
 .shop a{
     color:white;
     text-decoration: none;
-
-
-    
-
 }
+
+
+
 @media (max-width: 768px) {
     .navbar{
         flex-direction:flex;
@@ -93,11 +94,6 @@ body {
         width: 100%;
         background-color: #047857;
         margin-top:50px;
-    
-        
-    
-    
-    
     }
     
     .nav.active {
@@ -123,6 +119,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     text-align: center;
+    
 }
 
 }
