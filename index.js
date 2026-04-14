@@ -1,12 +1,12 @@
+
 const menu =document.getElementById('menubtn');
-const nav =document.getElementById('nav');
+const nav =document.getElementById("nav");
 
 menu.addEventListener('click', () => {
     menu.classList.toggle('active');
     if
   (menu.classList.contains("active"))
-  menu.textContent = "back"
+  menu.textContent = "X"
   else
   menu.textContent =  "☰"
 });
-console.log("js is working")
