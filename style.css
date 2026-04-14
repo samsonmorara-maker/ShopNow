@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #f5f3ff;
     margin: 0;
@@ -9,10 +11,11 @@ body {
 .navbar{
     background-color:#047857;
     color:white;
+    font-family: trebuchet MS,Verdana, sans-serif;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    font-family: trebuchet MS,Verdana, sans-serif;
+    height: 50px;
+    line-height:50px;
 }
 .navbar a{
     color:white;
@@ -46,6 +49,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    line-height: 50px;
 }
 /* making the cart count invible when there are no items in the cart */
 .cart-count {
@@ -58,21 +62,50 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px ;
     text-align: center;
+    height: 100px;
+
+
+    
+}
+.shop {
+    padding: 5px;
+    font-size: x-large;
+    background-color: blue;
+    border-color: blue ;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.shop a{
+    color:white;
+    text-decoration: none;
+
+
+    
+
 }
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: row;
+    .navbar{
+        flex-direction:flex;
     }
     .nav{
-        margin-top: 50px;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        display :none;
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        background-color: #047857;
+        right: 0%;
+        margin-top:50px;
+    
+        
+    
+    
+    
     }
     
     .nav.active {
-        display: flex;
+        display:flex;
+
+
     
     }
     .nav-right {
@@ -86,6 +119,7 @@ body {
     }
     .cart { 
          display: block;
+         line-height: auto;
     }
 .hero-section{
     font-family: Arial, Helvetica, sans-serif;
