@@ -68,6 +68,7 @@ h4{
     font-size: xx-large;
 }
 
+
 .shop {
     padding: 5px;
     font-size: x-large;
@@ -80,6 +81,11 @@ h4{
 .shop a{
     color:white;
     text-decoration: none;
+}
+
+.new-arrival{
+    display: flex;
+
 }
 
 
@@ -119,7 +125,13 @@ h4{
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     text-align: center;
+    height: 150px;
     
 }
+p{
+   font-family: Arial, Helvetica, sans-serif; 
+   font:100
+}
+
 
 }
