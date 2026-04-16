@@ -6,24 +6,41 @@ menu.addEventListener('click', () => {
     nav.classList.toggle('active');
     if
   (nav.classList.contains("active"))
-  menu.textContent = "X"
+  menu.textContent = "X" 
+
   else
   menu.textContent =  "☰"
 });
 
+ //a function to display the fetched data
 
-// fectching products from fake store api and making it appear on my webpage
+function displayProducts(products){
+
+  const collection = document.getElementById("new-arrival");
+   products.forEach(product => {
+    const card = document.createElement("div");
+    card.innerHTML = `<div><img src="${product.image}" alt = alt ="${product.title}">
+                     <h3>${product.title}<h3>
+                      <p>${product.price}</p></div>`
+  collection.appendChild(card)
+   });
+  }
+
+//fetching data from the fake store api
+
 async function fetchproducts() {
-  const response = await 
-  fetch('https://fakestoreapi.com/products')
-  const data = await response.json();
+    const response = await fetch('https://fakestoreapi.com/products')
+    const data = await response.json();
 
   const products = data.slice(0,4);
-  
+
   displayProducts(products);
   
 }
+  
+
 fetchproducts();
+
 
 
 
