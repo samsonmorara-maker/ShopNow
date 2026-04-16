@@ -19,9 +19,9 @@ function displayProducts(products){
   const collection = document.getElementById("new-arrival");
    products.forEach(product => {
     const card = document.createElement("div");
-    card.innerHTML = `<div><img src="${product.image}" alt = alt ="${product.title}">
-                     <h3>${product.title}<h3>
-                      <p>${product.price}</p></div>`
+    card.innerHTML = `<div class="card"><img src="${product.image}" alt = alt ="${product.title}">
+                     <h6>${product.title}<h6>
+                      <p>$${product.price}</p></div>`
   collection.appendChild(card)
    });
   }
