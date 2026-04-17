@@ -118,12 +118,24 @@ h5{
 .social-proof{
     display:grid;
     grid-template-columns: repeat(3,minmax(220px, 1fr));
+    font-size: x-large;
+    background-color:ivory;
+    border-radius: 20px;
+    
 }
 .social-proof img{
     border-radius: 120px;
     width: 150px;
     height: 150px;
     object-fit: contain;
+}
+.benefit{
+    font-size: xx-large;
+    font-display: auto;
+    text-align: center;
+}
+.h{
+ text-align: center;
 }
 
 @media (max-width: 768px) {
