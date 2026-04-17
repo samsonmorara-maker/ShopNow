@@ -13,18 +13,27 @@ menu.addEventListener('click', () => {
 });
 
  //a function to display the fetched data
-
+let count = 0
 function displayProducts(products){
 
   const collection = document.getElementById("new-arrival");
    products.forEach(product => {
     const card = document.createElement("div");
     card.innerHTML = `<div class="card"><img src="${product.image}" alt = alt ="${product.title}">
-                     <h6>${product.title}<h6>
-                      <p>$${product.price}</p></div>`
-  collection.appendChild(card)
-   });
-  }
+                     <h5>${product.title}<h5>
+                      <p>$${product.price}</p>
+                      <button class="cart-btn" id="cartbtn">Add to cart</button></div>`
+                  
+  collection.appendChild(card); });
+  const button =document.getElementById("cart-btn")
+  button.addEventListener("click",
+function AddToCart(){
+  count++;
+  document.getElementById("cartcount").textContent = count;
+});
+
+   
+  }   
 
 //fetching data from the fake store api
 
@@ -40,6 +49,13 @@ async function fetchproducts() {
   
 
 fetchproducts();
+
+button.addEventListener("click",
+function AddToCart(){
+  count++;
+  document.getElementById("cartcount").textContent = count;
+});
+
 
 
 

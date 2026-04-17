@@ -16,8 +16,9 @@ body {
     justify-content: space-between;
     height: 50px;
     line-height:50px;
-    position: sticky;
+    position:-webkit-sticky;
     z-index: 1000;
+    padding: 20px;
 }
 .navbar a{
     color:white;
@@ -55,16 +56,17 @@ body {
 }
 /* making the cart count invible when there are no items in the cart */
 .cart-count {
-    display: none;
+    display: inline-block;
     color:red;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: transparent;
+    padding: 0%;
 }
 .hero-section{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px ;
     text-align: center;
-    height: 380px;  
+    height: 350px;  
 }
 h4{
     font-size: xx-large;
@@ -98,7 +100,6 @@ h4{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, rgb(136, 230, 136), 0, 0.1);
     padding: 15px;
-    text-align: center;
     background-color:#e0f2f1;
     border-radius: 15px;
 
@@ -110,8 +111,20 @@ h4{
     height: auto;
     object-fit: contain;
 }
+h5{
+    font-size: large;
+}
 
-
+.social-proof{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(220px, 1fr));
+}
+.social-proof img{
+    border-radius: 120px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
 
 @media (max-width: 768px) {
     .navbar{
@@ -165,5 +178,8 @@ p{
     width: 300px;
     height: auto;
     object-fit: contain;
+}
+.social-proof{
+    grid-template-columns: auto;
 }
 }
