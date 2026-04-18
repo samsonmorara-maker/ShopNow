@@ -18,7 +18,8 @@ body {
     line-height:50px;
     position:-webkit-sticky;
     z-index: 1000;
-    padding: 20px;
+    padding:20px ;
+    
 }
 .navbar a{
     color:white;
@@ -67,6 +68,50 @@ body {
     font-size: 30px ;
     text-align: center;
     height: 350px;  
+}
+.hero{
+    margin: 0%;
+    margin-top: 0%;
+    padding-top: 0%;
+    background-image: url(https://images.pexels.com/photos/7319108/pexels-photo-7319108.jpeg);
+    background-size: contain;
+    height: 60vh;
+    text-align: center;
+}
+.hero h3{
+    font-size: xx-large;
+    color: rgb(96, 224, 10);
+
+}
+.hero p{
+    font-size: x-large;
+    color: rgb(94, 0, 0);
+
+}
+.image img{
+    height: 600px;
+    width: 100%;
+    object-fit: contain; 
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.mission{
+    display:grid;
+    grid-template-columns: repeat(2,minmax(220px, 1fr));
+    height: 600px;
+}
+.M-text{
+    text-align: center;
+    font-size: xx-large;
+} 
+.M-text h5{
+    font-size: xx-large;
+}
+.us{
+    font-size: xx-large;
+}
+.us h5{
+    font-size: xx-large;
 }
 h4{
     font-size: xx-large;
@@ -163,8 +208,8 @@ footer a{
     letter-spacing: 0.5px;
     
 }
-.footer a :hover {
-    color: aqua;
+.footer a:hover {
+    color:greenyellow;
     
 }
 @media (max-width: 768px) {
@@ -205,6 +250,10 @@ footer a{
     height: 150px;
     
 }
+.hero{
+    background-image: url(https://images.pexels.com/photos/7319108/pexels-photo-7319108.jpeg);
+    background-size: cover;
+}
 p{
    font-family: Arial, Helvetica, sans-serif; 
    font:100
@@ -222,5 +271,23 @@ p{
 }
 .social-proof{
     grid-template-columns: auto;
+}
+.mission{
+    grid-template-columns: repeat(1, minmax(220px, 1fr));
+    padding: 20px;
+    margin: 50px;
+}
+.M-text{
+    font-size: larger;
+    padding: auto;
+}
+.us{
+    margin: 20px;
+    padding: 30px;
+}
+.image{
+    border-radius: 112px;
+    height: auto;
+
 }
 }

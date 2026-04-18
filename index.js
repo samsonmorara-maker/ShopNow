@@ -26,11 +26,7 @@ function displayProducts(products){
                   
   collection.appendChild(card); });
   const button =document.getElementById("cart-btn")
-  button.addEventListener("click",
-function AddToCart(){
-  count++;
-  document.getElementById("cartcount").textContent = count;
-});
+  
 
    
   }   
