@@ -1,4 +1,3 @@
-//making the navbar responsive creating a menu button
 const menu =document.getElementById('menuBtn');
 const nav =document.getElementById("nav");
 
@@ -12,11 +11,11 @@ menu.addEventListener('click', () => {
   menu.textContent =  "☰"
 });
 
- //a function to display the fetched data
+
 
 function displayProducts(products){
 
-  const collection = document.getElementById("new-arrival");
+  const collection = document.getElementById("new-arrivals");
    products.forEach(product => {
     const card = document.createElement("div");
     card.classList.add("card")
@@ -42,12 +41,11 @@ function displayProducts(products){
   }   
 
 //fetching data from the fake store api
-
 async function fetchproducts() {
     const response = await fetch('https://fakestoreapi.com/products')
     const data = await response.json();
 
-  const products = data.slice(0,4);
+  const products = data.slice(4,20);
 
   displayProducts(products);
   
@@ -55,6 +53,8 @@ async function fetchproducts() {
   
 
 fetchproducts();
+
+
 
 //function to add to cart logic 
 let cart = [];

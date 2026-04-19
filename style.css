@@ -242,6 +242,10 @@ footer a{
     button:hover {
       background: #218838;
     }
+    .new-arrivals{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(220px, 1fr));
+    }
 @media (max-width: 768px) {
     .navbar{
         flex-direction:flex;
