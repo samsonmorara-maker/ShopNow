@@ -212,6 +212,36 @@ footer a{
     color:greenyellow;
     
 }
+.container {
+      max-width: 500px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #218838;
+    }
 @media (max-width: 768px) {
     .navbar{
         flex-direction:flex;
@@ -272,22 +302,14 @@ p{
 .social-proof{
     grid-template-columns: auto;
 }
+
 .mission{
-    grid-template-columns: repeat(1, minmax(220px, 1fr));
-    padding: 20px;
-    margin: 50px;
-}
-.M-text{
-    font-size: larger;
-    padding: auto;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(100px, 1fr));
+    overflow-wrap: break-word;
+
 }
 .us{
-    margin: 20px;
-    padding: 30px;
-}
-.image{
-    border-radius: 112px;
-    height: auto;
-
+    display: none;
 }
 }
