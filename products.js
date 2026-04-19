@@ -16,6 +16,7 @@ menu.addEventListener('click', () => {
 function displayProducts(products){
 
   const collection = document.getElementById("new-arrivals");
+  collection.innerHTML = "";
    products.forEach(product => {
     const card = document.createElement("div");
     card.classList.add("card")
@@ -41,11 +42,12 @@ function displayProducts(products){
   }   
 
 //fetching data from the fake store api
+let products = [];
 async function fetchproducts() {
     const response = await fetch('https://fakestoreapi.com/products')
     const data = await response.json();
 
-  const products = data.slice(4,20);
+   products = data.slice(4,20);
 
   displayProducts(products);
   
@@ -77,7 +79,7 @@ function addToCart(e){
   }
   //saveCart();
   updateCartCount();
-  renderingcart();
+  //renderingcart();
 }
 // a function to add cart count
 function updateCartCount(){
@@ -88,6 +90,17 @@ function updateCartCount(){
   document.getElementById("cartcount").textContent=totalItems;
 }
 
+function searchProducts(){
+    const searchText = document.getElementById("searchInput")
+      .value
+      .toLowerCase()
+      .trim();
 
-
+      const filteredProducts = products.filter(product =>
+        product.title.toLowerCase().includes(searchText)
+      );
+      displayProducts(filteredProducts);
+}
+document.getElementById("search")
+.addEventListener("click", searchProducts);
 

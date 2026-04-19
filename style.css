@@ -246,6 +246,18 @@ footer a{
         display: grid;
         grid-template-columns: repeat(4, minmax(220px, 1fr));
     }
+    .search-box{
+        width: 300px;
+        position: relative;
+        border-radius :5px;
+
+    }
+    .search-box span{
+        position:absolute;
+        right:10px;
+        top:40%;
+        
+    }
 @media (max-width: 768px) {
     .navbar{
         flex-direction:flex;
@@ -315,5 +327,8 @@ p{
 }
 .us{
     display: none;
+}
+.new-arrivals{
+    grid-template-columns: repeat(1, minmax(220px, 1fr));
 }
 }
