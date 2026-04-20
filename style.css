@@ -269,7 +269,34 @@ footer a{
     button:hover {
       background: #218838;
     }
+#chosen-items{
+     display: grid;
+    grid-template-columns: repeat(4, minmax(220px,1fr));
+    gap:20px;
+    
+}
+.cart-item{
+   border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, rgb(136, 230, 136), 0, 0.1);
+    padding: 15px;
+    background-color:#e0f2f1;
+    border-radius: 15px;
 
+    
+}
+.cart-item img{
+     width: 400px;
+    height: 500px;
+    object-fit: contain;
+}
+.remove-btn{
+    background: red;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
 
 @media (max-width: 768px) {
     .navbar{
@@ -342,6 +369,12 @@ p{
     display: none;
 }
 .new-arrivals{
+    grid-template-columns: repeat(1, minmax(220px, 1fr));
+}
+#chosen-items{
+    grid-template-columns: repeat(1, minmax(220px,1fr));
+}
+.footer{
     grid-template-columns: repeat(1, minmax(220px, 1fr));
 }
 }

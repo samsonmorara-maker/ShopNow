@@ -57,7 +57,7 @@ async function fetchproducts() {
 fetchproducts();
 
 //function to add to cart logic 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 function addToCart(e){
   const button = e.target;
   const product ={
@@ -75,7 +75,7 @@ function addToCart(e){
     cart.push(product);
 
   }
-  //saveCart();
+  localStorage.setItem("cart", JSON.stringify(cart));
   updateCartCount();
   renderingcart();
 }
