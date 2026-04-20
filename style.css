@@ -153,7 +153,7 @@ h4{
 }
 .card img{
     width: 400px;
-    height: auto;
+    height: 500px;
     object-fit: contain;
 }
 h5{
@@ -230,7 +230,7 @@ footer a{
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-    button {
+    .contact-btn{
       width: 100%;
       padding: 10px;
       background: #28a745;
@@ -258,6 +258,19 @@ footer a{
         top:40%;
         
     }
+.cart-btn{ width: 100%;
+      padding: 10px;
+      background: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #218838;
+    }
+
+
 @media (max-width: 768px) {
     .navbar{
         flex-direction:flex;

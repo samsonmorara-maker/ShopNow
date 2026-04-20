@@ -9,17 +9,17 @@ const {
 
 // TEST 1: MENU TOGGLE
 
-test('toggles menu from closed to open', () => {
+        test('toggles menu from closed to open', () => {
   const result = toggleMenuState(false);
 
-  expect(result.isActive).toBe(true);
+    expect(result.isActive).toBe(true);
   expect(result.text).toBe("X");
 });
 
-test('toggles menu from open to closed', () => {
+        test('toggles menu from open to closed', () => {
   const result = toggleMenuState(true);
 
-  expect(result.isActive).toBe(false);
+    expect(result.isActive).toBe(false);
   expect(result.text).toBe("☰");
 });
 
@@ -27,14 +27,14 @@ test('toggles menu from open to closed', () => {
 
 // TEST 2: FILTER PRODUCTS
 
-test('filters products using search text', () => {
+        test('filters products using search text', () => {
   const products = [
     { title: "iPhone" },
     { title: "Laptop" },
     { title: "Headphones" }
   ];
 
-  const result = filterProducts(products, "phone");
+    const result = filterProducts(products, "phone");
 
   expect(result.length).toBe(1);
   expect(result[0].title).toBe("iPhone");
